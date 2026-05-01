@@ -5,7 +5,6 @@ simple Rich Text Editor built using HTML, CSS, and JavaScript. It includes basic
 
 A simple and lightweight Rich Text Editor built using HTML, CSS, and JavaScript. This editor allows users to format text directly in the browser with common editing tools.
 
----
 
 🚀 Features
 
@@ -16,14 +15,12 @@ A simple and lightweight Rich Text Editor built using HTML, CSS, and JavaScript.
 - Clear formatting
 - Editable content area (WYSIWYG)
 
----
 
 📂 Project Structure
 
 rich-text-editor/
 │── index.html   # Main editor file
 
----
 
 🛠️ Technologies Used
 
@@ -31,7 +28,6 @@ rich-text-editor/
 - CSS3
 - JavaScript (Vanilla JS)
 
----
 
 ▶️ How to Run
 
