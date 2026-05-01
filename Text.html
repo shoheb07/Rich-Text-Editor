@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rich Text Editor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .toolbar {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 5px;
+      background: #f5f5f5;
+    }
+
+    .toolbar button {
+      margin-right: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    #editor {
+      border: 1px solid #ccc;
+      min-height: 200px;
+      padding: 10px;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Rich Text Editor</h2>
+
+  <div class="toolbar">
+    <button onclick="format('bold')"><b>B</b></button>
+    <button onclick="format('italic')"><i>I</i></button>
+    <button onclick="format('underline')"><u>U</u></button>
+
+    <button onclick="format('justifyLeft')">Left</button>
+    <button onclick="format('justifyCenter')">Center</button>
+    <button onclick="format('justifyRight')">Right</button>
+
+    <button onclick="format('insertOrderedList')">OL</button>
+    <button onclick="format('insertUnorderedList')">UL</button>
+
+    <button onclick="addLink()">Link</button>
+    <button onclick="format('removeFormat')">Clear</button>
+  </div>
+
+  <div id="editor" contenteditable="true">
+    Start typing here...
+  </div>
+
+  <script>
+    function format(command) {
+      document.execCommand(command, false, null);
+    }
+
+    function addLink() {
+      let url = prompt("Enter URL:");
+      if (url) {
+        document.execCommand("createLink", false, url);
+      }
+    }
+  </script>
+
+</body>
+</html>
