@@ -39,7 +39,6 @@ rich-text-editor/
 2. Open the file in any modern web browser (Chrome, Edge, Firefox)
 3. Start typing and use the toolbar to format text
 
----
 
 🧠 How It Works
 
@@ -48,7 +47,6 @@ rich-text-editor/
   document.execCommand()
 - Toolbar buttons trigger different formatting commands like "bold", "italic", etc.
 
----
 
 ⚠️ Limitations
 
